@@ -1,0 +1,9 @@
+npm install {nome da aplicação} => Para instalar frameworks no projeto
+
+npm install --save-dev {nome da aplicação} => Para o framework instalado só funcionar em ambiente DEV
+
+NODEMON => O Nodemon monitora e, sempre que reconhece uma alteração no nosso código, ele mesmo reinicia os servidor.
+
+//RES => É o que estamos devolvendo para a requisição 
+
+//REQ => É a requisição que recebemos
