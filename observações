@@ -1,8 +1,11 @@
+==============Comandos==============
+
 npm install {nome da aplicação} => Para instalar frameworks no projeto
 
 npm install --save-dev {nome da aplicação} => Para o framework instalado só funcionar em ambiente DEV
 
-NODEMON => O Nodemon monitora e, sempre que reconhece uma alteração no nosso código, ele mesmo reinicia os servidor.
+
+==============Código==============
 
 //RES => É o que estamos devolvendo para a requisição 
 
@@ -10,4 +13,12 @@ NODEMON => O Nodemon monitora e, sempre que reconhece uma alteração no nosso c
 
 module.exports => Permite que a função dentro dele seja chamada em outros arquivos
 
+USE() => Método nativo do express para adicionar bibliotecas externas a serem usadas no programa
+
+==============Packages==============
+
 CONSIGN => O consign irá agrupar todas as rotas que formos criando dentro do app.
+
+BODY-PARSER => cuja função é justamente converter as requisições para algo que seja legível no JavaScript.
+
+NODEMON => O Nodemon monitora e, sempre que reconhece uma alteração no nosso código, ele mesmo reinicia os servidor.
