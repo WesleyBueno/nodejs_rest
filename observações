@@ -22,3 +22,8 @@ CONSIGN => O consign irá agrupar todas as rotas que formos criando dentro do ap
 BODY-PARSER => cuja função é justamente converter as requisições para algo que seja legível no JavaScript.
 
 NODEMON => O Nodemon monitora e, sempre que reconhece uma alteração no nosso código, ele mesmo reinicia os servidor.
+
+MYSQL => Para fazer conexões com banco MYSQL
+MYSQL2 => Para fazer conexões com banco MYSQL/atualizado
+
+MOMENT => Biblioteca que trabalha com datas, formatações, calculos e afins
