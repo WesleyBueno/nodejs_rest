@@ -1,8 +1,7 @@
-const express = require('express')
+const customExpress = require('./Config/customExpress')
 
-const app = express()
-
+const app = customExpress() //atribui a função customExpress para iniciar o servidor
 app.listen(3000, () => console.log('servidor sendo executado na porta 3000'))
 
-app.get('/atendimento', (req,res) => res.send('Você está na rota de atendimentos e fazendo um get'))
+
 

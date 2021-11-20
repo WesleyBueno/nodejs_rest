@@ -7,3 +7,7 @@ NODEMON => O Nodemon monitora e, sempre que reconhece uma alteração no nosso c
 //RES => É o que estamos devolvendo para a requisição 
 
 //REQ => É a requisição que recebemos
+
+module.exports => Permite que a função dentro dele seja chamada em outros arquivos
+
+CONSIGN => O consign irá agrupar todas as rotas que formos criando dentro do app.
