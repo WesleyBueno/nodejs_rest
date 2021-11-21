@@ -26,4 +26,4 @@ NODEMON => O Nodemon monitora e, sempre que reconhece uma alteração no nosso c
 MYSQL => Para fazer conexões com banco MYSQL
 MYSQL2 => Para fazer conexões com banco MYSQL/atualizado
 
-MOMENT => Biblioteca que trabalha com datas, formatações, calculos e afins
+MOMENT => Biblioteca que trabalha com datas, formatações, calculos e afins 
