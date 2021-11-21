@@ -27,7 +27,7 @@ class atendimento {
         if (existemErros) {
 
             res.status(400).json(erros)
-            
+
         } else {
 
             const atendimentoDatado = { ...atendimento, dataCriacao, data } //os ... significado TUDO
@@ -37,13 +37,68 @@ class atendimento {
                 if (erro) {
                     res.status(400).json(erro)
                 } else {
-                    res.status(201).json(resultado)
+                    res.status(201).json(atendimento)
                 }
             })
         }
     }
 
+    lista(res) {
+        const sql = 'SELECT * FROM atendimento'
+    
+        conexao.query(sql, (erro, resultados) => {
+            if(erro) {
+                res.status(400).json(erro)
+            } else {
+                res.status(200).json(resultados)
+            }
+        })
+    
+    }
+
+    buscaPorId(id, res) {
+        const sql = `SELECT * FROM atendimento WHERE id=${id}`
+
+        conexao.query(sql, (erro,resultados) => {
+            const atendimento = resultados[0]
+
+            if(erro) {
+                res.status(400).json(erro)
+            } else [
+                res.status(200).json(atendimento)
+            ]
+        })
+    }
+
+    altera(id, valores, res) {
+        if(valores.data){
+            valores.data = moment(valores.data, 'DD/MM/YYYY').format('YYYY-MM-DD HH:mm:ss')
+        }
+        const sql = 'UPDATE atendimento SET ? WHERE id=?'
+
+        conexao.query(sql,[valores,id], (erro, resultados) => {
+            if(erro){
+                res.status(400).json(erro)
+            } else {
+                res.status(200).json({...valores, id})
+            }
+        })
+    }
+
+    deleta(id, res){
+        const sql = 'DELETE FROM atendimento WHERE id=?'
+
+        conexao.query(sql,id, (erro,resultados) =>{
+            if(erro){
+                res.status(400).json(erro)
+            } else {
+                res.status(200).json({id})
+            }
+        })
+    }
 
 }
+
+
 
 module.exports = new atendimento

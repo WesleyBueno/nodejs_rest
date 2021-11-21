@@ -15,6 +15,9 @@ module.exports => Permite que a função dentro dele seja chamada em outros arqu
 
 USE() => Método nativo do express para adicionar bibliotecas externas a serem usadas no programa
 
+PATCH => É usado quando o objeto a ser alterado pode vir com informações parciais para alteração
+
+PUT => É usado quando o objeto a ser alterado vai vir sempre com todas as alterações
 ==============Packages==============
 
 CONSIGN => O consign irá agrupar todas as rotas que formos criando dentro do app.
